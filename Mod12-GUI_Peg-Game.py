@@ -1,16 +1,4 @@
-# Procedural approach
-"""
-from PyQt5 import QtWidgets
-import sys   # This was not in the instructions
-
-if __name__ == "__main__":
-    app = QtWidgets.QApplication(sys.argv)  # Was sys was unused argument before import
-    main_window = QtWidgets.QWidget()
-    main_window.show()
-    app.exec_()
-"""
-
-# Using object-oriented approach to code above (lines 3 - 10)
+# Using object-oriented approach
 
 from PyQt5 import QtWidgets
 import sys   # This was not in the instructions
@@ -76,25 +64,4 @@ if __name__ == "__main__":
     main_window = PegGameWindow()
     app.exec_()
 
-"""       
-    def setup(self):
-        self.setGeometry(200, 200, 400, 200)
-        self.setWindowTitle('Triangle Peg Game')
-        self.setToolTip("Play the triangle peg game!")
-        self.new_button = StartNewGameBtn(self)
-        self.quit_button = QuitBtn(self)
-        self.show()
 
-# Make buttons
-class StartNewGameBtn(QtWidgets.QPushButton):
-    def __init__(self, parent):
-        QtWidgets.QPushButton.__init__(self, parent)
-        self.setText("Start New Game")
-        self.move(20, 160)
-
-class QuitBtn(QtWidgets.QPushButton):
-    def __init__(self, parent):
-        QtWidgets.QPushButton.__init__(self, parent)
-        self.setText("Quit")
-        self.move(150, 160)
-"""
